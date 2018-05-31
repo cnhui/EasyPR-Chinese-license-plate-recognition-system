@@ -29,7 +29,9 @@ EasyPR不需要安装，开发者直接在其上做改动。如果想使用DLL�
 
 使用Git克隆一份拷贝到你本机或者直接下载zip压缩吧。使用vs2010或以上版本的IDE选择“从现有代码创建项目”，引用EasyPR的目录。
 
+
 ===========================
+
 
 3.2、EasyPR-master
 本次更新版本是1.6正式版本，主要有以下几点更新：
@@ -58,7 +60,9 @@ EasyPR特点：
 
 4.2、EasyPR--中文开源车牌识别系统 开发详解（1）： http://www.cnblogs.com/subconscious/p/4001896.html
 
+
 ============================
+
 The English version
 
 1. When you download this EasyPR, please check the readme. md instructions and the development of the Chinese EasyPR license plate recognition system under ARM Linux.
