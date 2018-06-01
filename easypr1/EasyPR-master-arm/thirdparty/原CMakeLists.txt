@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(thirdparty_arm)
+
+# c++11 required
+set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+SET(CMAKE_SYSTEM_NAME Linux)
+SET(CMAKE_C_COMPILER "/opt/hisi-linux/x86-arm/arm-histbv310-linux/bin/arm-histbv310-linux-gcc")
+SET(CMAKE_CXX_COMPILER "/opt/hisi-linux/x86-arm/arm-histbv310-linux/bin/arm-histbv310-linux-gcc")
+
+include_directories(.)
+include_directories("/work/gaohui/install/include/opencv")
+include_directories("/work/gaohui/install/include")
+
+LINK_DIRECTORIES("/work/gaohui/install/lib")
+
+# OpenVC3 required
+find_package(OpenCV 3.1.0 REQUIRED)
+
+# where to find header files
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# sources to be compiled
+set(SOURCE_FILES
+        xmlParser/xmlParser.cpp
+        textDetect/erfilter.cpp
+        LBP/helper.cpp
+        LBP/lbp.cpp
+        mser/mser2.cpp
+        )
+
+# pack objects to static library
+add_library(thirdparty STATIC ${SOURCE_FILES})

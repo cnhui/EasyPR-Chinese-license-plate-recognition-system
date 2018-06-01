@@ -1,0 +1,2 @@
+/usr/bin/ar qc libthirdparty_arm.a  CMakeFiles/thirdparty_arm.dir/xmlParser/xmlParser.cpp.o CMakeFiles/thirdparty_arm.dir/textDetect/erfilter.cpp.o CMakeFiles/thirdparty_arm.dir/LBP/helper.cpp.o CMakeFiles/thirdparty_arm.dir/LBP/lbp.cpp.o CMakeFiles/thirdparty_arm.dir/mser/mser2.cpp.o
+/usr/bin/ranlib libthirdparty_arm.a
